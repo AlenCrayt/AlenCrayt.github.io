@@ -1,0 +1,81 @@
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$color_fondo_elementos: rgb(255, 238, 206);
+
+body {
+  background-color: floralwhite;
+  font-family: Arial, Helvetica, sans-serif;
+  @include flex_center;
+  flex-direction: column;
+}
+
+.barra_navegacion {
+  @include flex_center;
+  background-color: $color_fondo_elementos;
+  border-radius: 10px;
+  width: 50%;
+  h3 {
+    margin-right: 3%;
+  }
+  a {
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+    margin-left: 3%;
+  }
+}
+
+.seccion_introduccion {
+  @include flex_center;
+  margin-top: 3%;
+  button {
+    border: none;
+    border-radius: 15px;
+    padding: 5%;
+    background-color: chartreuse;
+  }
+  img {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    margin-left: 10%;
+  }
+}
+
+.sesiones {
+  @include flex_center;
+  background-color: $color_fondo_elementos;
+  border-radius: 10px;
+  margin-top: 5%;
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  img {
+    margin-right: 1%;
+    border-radius: 10px;
+    width: 35%;
+  }
+}
+
+.temas {
+  @include flex_center;
+  background-color: $color_fondo_elementos;
+  border-radius: 10px;
+  margin-top: 5%;
+  div {
+    margin-bottom: 18%;
+    margin-left: 1%;
+  }
+  img {
+    margin-left: 1%;
+    border-radius: 10px;
+    width: 60%;
+  }
+}
