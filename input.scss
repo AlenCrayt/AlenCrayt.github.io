@@ -16,9 +16,12 @@ body {
   @include flex_center;
   background-color: $color_fondo_elementos;
   border-radius: 10px;
-  width: 50%;
+  width: 60%;
   h3 {
     margin-right: 3%;
+  }
+  #titulo {
+    font-size: xx-large;
   }
   a {
     color: black;
