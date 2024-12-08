@@ -13,10 +13,13 @@ body {
   align-items: center;
   background-color: rgb(255, 238, 206);
   border-radius: 10px;
-  width: 50%;
+  width: 60%;
 }
 .barra_navegacion h3 {
   margin-right: 3%;
+}
+.barra_navegacion #titulo {
+  font-size: xx-large;
 }
 .barra_navegacion a {
   color: black;
