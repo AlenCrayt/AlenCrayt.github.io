@@ -86,4 +86,36 @@ body {
   width: 60%;
 }
 
+.lugares_atencion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 238, 206);
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.separador {
+  background-color: white;
+  padding-left: 100%;
+  padding-right: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.grupo_imagenes_consultorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenes_consultorio {
+  width: 45%;
+  border-radius: 10px;
+  margin: 1%;
+}
+
 /*# sourceMappingURL=output.css.map */

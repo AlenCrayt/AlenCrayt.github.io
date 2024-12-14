@@ -82,3 +82,31 @@ body {
     width: 60%;
   }
 }
+
+.lugares_atencion {
+  @include flex_center;
+  flex-direction: column;
+  background-color: $color_fondo_elementos;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.separador {
+  background-color: white;
+  padding-left: 100%;
+  padding-right: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.grupo_imagenes_consultorio {
+  @include flex_center;
+}
+
+.imagenes_consultorio {
+  width: 45%;
+  border-radius: 10px;
+  margin: 1%;
+}
