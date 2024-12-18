@@ -6,7 +6,9 @@
 $color_fondo_elementos: rgb(255, 238, 206);
 
 body {
-  background-color: floralwhite;
+  //background-color: floralwhite;
+  background-image: url(./imagenes/fondo_pagina.jpg);
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   @include flex_center;
   flex-direction: column;
@@ -34,17 +36,30 @@ body {
 .seccion_introduccion {
   @include flex_center;
   margin-top: 3%;
+}
+
+.texto_importante {
+  width: 45%;
+  margin: 2%;
+  padding: 2%;
   button {
+    font-size: large;
     border: none;
     border-radius: 15px;
-    padding: 5%;
+    padding: 10%;
     background-color: chartreuse;
   }
+}
+
+.galeria_imagenes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  gap: 0%;
   img {
-    width: 40%;
-    height: 40%;
-    border-radius: 10px;
-    margin-left: 10%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
   }
 }
 
@@ -83,6 +98,23 @@ body {
   }
 }
 
+.que_dicen_pacientes {
+  @include flex_center;
+  flex-direction: column;
+}
+
+.resenias {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  gap: 5%;
+}
+
+.comentario_paciente {
+  @include flex_center;
+  flex-direction: column;
+}
+
 .lugares_atencion {
   @include flex_center;
   flex-direction: column;
@@ -91,14 +123,6 @@ body {
   margin-top: 2%;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.separador {
-  background-color: white;
-  padding-left: 100%;
-  padding-right: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 
 .grupo_imagenes_consultorio {
