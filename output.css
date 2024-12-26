@@ -15,7 +15,7 @@ body {
   background-color: rgb(255, 238, 206);
   border-radius: 10px;
   border: 1px solid black;
-  width: 60%;
+  width: 50%;
 }
 .barra_navegacion h3 {
   margin-right: 3%;
@@ -27,6 +27,13 @@ body {
   color: black;
   font-size: large;
   text-decoration: none;
+  margin-left: 3%;
+}
+.barra_navegacion button {
+  background-color: chartreuse;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
   margin-left: 3%;
 }
 
@@ -50,19 +57,6 @@ body {
   background-color: chartreuse;
 }
 
-.galeria_imagenes {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 50% 50%;
-  gap: 0%;
-}
-.galeria_imagenes img {
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-  border: 2px solid black;
-}
-
 .columna_imagenes {
   display: flex;
   justify-content: center;
@@ -76,6 +70,7 @@ body {
   margin-top: 5%;
   padding: 0%;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .sesiones {
@@ -121,6 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3%;
 }
 
 .resenias {
@@ -149,6 +145,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: rgb(255, 238, 206);
+  border: 1px solid black;
   border-radius: 10px;
   margin-top: 2%;
   margin-left: 10%;
@@ -165,6 +162,11 @@ body {
   width: 45%;
   border-radius: 10px;
   margin: 1%;
+}
+
+.perfil {
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=output.css.map */
