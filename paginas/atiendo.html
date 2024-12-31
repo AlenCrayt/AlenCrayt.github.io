@@ -9,14 +9,34 @@
   <body>
     <nav class="barra_navegacion">
       <a id="titulo" href="../index.html">Lucia Navarro Psicóloga</a>
-      <a href="./servicios.html">Servicios</a>
       <a href="./atiendo.html">Donde Atiendo</a>
-      <button onmouseenter="">Contactos</button>
+      <button
+        onmouseenter="contactos_visible_atiendo()"
+        onmouseleave="contactos_novisible_atiendo()"
+      >
+        Contactos
+      </button>
     </nav>
+    <article id="panel_contactos_atiendo">
+      <h1>+54 2944624788</h1>
+      <h1>psicolucianavarro@gmail.com</h1>
+      <a href="https://www.instagram.com/psicolucianavarro/"
+        >psicolucianavarro</a
+      >
+    </article>
     <h1>Atiendo en el Centro y el Kilómetro 5 de Bariloche</h1>
-    <!--Utilizar flex con ambos lugares_atencion adentro de un div para que queden mejor?-->
     <div class="lugares_atencion">
       <h3>Mi consultorio del centro:</h3>
+      <p>En los apartamentos en la calle Moreno enfrente de la YPF</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d187.81227089145662!2d-71.30911748759652!3d-41.13460598812978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1735518720713!5m2!1sen!2sar"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       <div class="grupo_imagenes_consultorio">
         <img
           class="imagenes_consultorio"
@@ -45,5 +65,6 @@
         />
       </div>
     </div>
+    <script defer src="../script.js"></script>
   </body>
 </html>

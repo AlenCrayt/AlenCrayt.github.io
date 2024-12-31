@@ -9,10 +9,21 @@
   <body>
     <nav class="barra_navegacion">
       <a id="titulo" href="./index.html">Lucia Navarro Psicóloga</a>
-      <a href="./paginas/servicios.html">Servicios</a>
       <a href="./paginas/atiendo.html">Donde Atiendo</a>
-      <button onmouseenter="">Contactos</button>
+      <button
+        onmouseenter="contactos_visible()"
+        onmouseleave="contactos_novisible()"
+      >
+        Contactos
+      </button>
     </nav>
+    <article id="panel_contactos">
+      <h1>+54 2944624788</h1>
+      <h1>psicolucianavarro@gmail.com</h1>
+      <a href="https://www.instagram.com/psicolucianavarro/"
+        >psicolucianavarro</a
+      >
+    </article>
     <article class="seccion_introduccion">
       <div class="columna_imagenes">
         <img src="/imagenes/galeria_plano_1.jpg" alt="Imagen no disponible" />
@@ -100,6 +111,28 @@
         </p>
       </div>
     </article>
+    <article class="seccion_introduccion">
+      <div class="texto_importante">
+        <h1>Como son mis sesiones</h1>
+        <p>
+          Mis sesiones están diseñadas para ser un espacio de confianza y
+          respeto, donde podés sentirte libre de expresarte sin miedo a juicios.
+          El ambiente que se crea es cálido y empático, facilitando la apertura
+          para hablar de aquello que te preocupa o inquieta. Desde el primer
+          encuentro, trabajamos a tu ritmo, respetando tus tiempos y necesidades
+          personales. Utilizo herramientas terapéuticas adaptadas a cada caso,
+          asegurándome de que el proceso sea siempre único y ajustado a vos.
+          Durante las sesiones, se prioriza la escucha activa, ayudándote a
+          identificar patrones, emociones y pensamientos que influyen en tu
+          bienestar.
+        </p>
+      </div>
+      <img
+        class="perfil2"
+        src="imagenes/LN_3.jpeg"
+        alt="Imagen no disponible"
+      />
+    </article>
     <article class="que_dicen_pacientes">
       <h2>Que dicen mis pacientes?</h2>
       <div class="resenias">
@@ -165,5 +198,6 @@
         </article>
       </div>
     </article>
+    <script defer src="./script.js"></script>
   </body>
 </html>

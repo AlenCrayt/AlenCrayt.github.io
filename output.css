@@ -15,7 +15,7 @@ body {
   background-color: rgb(255, 238, 206);
   border-radius: 10px;
   border: 1px solid black;
-  width: 50%;
+  width: 45%;
 }
 .barra_navegacion h3 {
   margin-right: 3%;
@@ -27,14 +27,38 @@ body {
   color: black;
   font-size: large;
   text-decoration: none;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 .barra_navegacion button {
   background-color: chartreuse;
   border: none;
   border-radius: 10px;
   font-size: large;
-  margin-left: 3%;
+  margin-left: 5%;
+}
+
+#panel_contactos {
+  position: absolute;
+  background-color: rgb(255, 238, 206);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-left: 40%;
+  margin-bottom: 162%;
+  padding: 2%;
+  visibility: hidden;
+}
+
+#panel_contactos_atiendo {
+  position: absolute;
+  background-color: rgb(255, 238, 206);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 90%;
+  margin-left: 36%;
+  padding: 2%;
+  visibility: hidden;
 }
 
 .seccion_introduccion {
@@ -73,44 +97,6 @@ body {
   border-radius: 10px;
 }
 
-.sesiones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 238, 206);
-  border-radius: 10px;
-  border: 2px solid black;
-  margin-top: 5%;
-}
-.sesiones div {
-  display: flex;
-  flex-direction: column;
-  margin: 2%;
-}
-.sesiones img {
-  margin-right: 1%;
-  border-radius: 10px;
-  width: 200%;
-}
-
-.temas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 238, 206);
-  border: 2px solid black;
-  border-radius: 10px;
-  margin-top: 5%;
-}
-.temas div {
-  margin: 2%;
-}
-.temas img {
-  margin-left: 1%;
-  border-radius: 10px;
-  width: 200%;
-}
-
 .que_dicen_pacientes {
   display: flex;
   justify-content: center;
@@ -137,6 +123,18 @@ body {
   margin: 0%;
   padding-left: 5%;
   padding-right: 5%;
+}
+.comentario_paciente div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comentario_paciente div h1 {
+  text-align: center;
+  font-size: xx-large;
+  opacity: 75%;
+  margin: 5%;
+  margin-bottom: 50%;
 }
 
 .lugares_atencion {
@@ -165,6 +163,12 @@ body {
 }
 
 .perfil {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.perfil2 {
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
 }
