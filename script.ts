@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function contactos_visible() {
   contactos1.style.visibility = "visible";
 }
+
 function contactos_novisible() {
   contactos1.style.visibility = "hidden";
 }

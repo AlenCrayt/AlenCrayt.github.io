@@ -1,7 +1,7 @@
 body {
   background-image: url(./imagenes/fondo_pagina.jpg);
   background-size: contain;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +20,8 @@ body {
 .barra_navegacion h3 {
   margin-right: 3%;
 }
-.barra_navegacion #titulo {
-  font-size: xx-large;
+.barra_navegacion .titulo {
+  font-size: x-large;
 }
 .barra_navegacion a {
   color: black;
@@ -42,11 +42,23 @@ body {
   background-color: rgb(255, 238, 206);
   border: 1px solid black;
   border-radius: 10px;
-  margin-top: 1%;
-  margin-left: 40%;
-  margin-bottom: 162%;
-  padding: 2%;
+  padding: 1%;
+  margin-top: 17%;
+  margin-left: 35%;
+  width: 30%;
   visibility: hidden;
+}
+#panel_contactos div {
+  display: flex;
+  align-items: center;
+}
+#panel_contactos div svg {
+  margin-right: 1%;
+}
+#panel_contactos div img {
+  width: 8%;
+  height: 8%;
+  margin-right: 1%;
 }
 
 #panel_contactos_atiendo {
@@ -54,11 +66,23 @@ body {
   background-color: rgb(255, 238, 206);
   border: 1px solid black;
   border-radius: 10px;
-  margin-top: 1%;
-  margin-bottom: 90%;
+  margin-bottom: 88%;
   margin-left: 36%;
-  padding: 2%;
+  padding: 1%;
+  width: 30%;
   visibility: hidden;
+}
+#panel_contactos_atiendo div {
+  display: flex;
+  align-items: center;
+}
+#panel_contactos_atiendo div svg {
+  margin-right: 1%;
+}
+#panel_contactos_atiendo div img {
+  width: 8%;
+  height: 8%;
+  margin-right: 1%;
 }
 
 .seccion_introduccion {
