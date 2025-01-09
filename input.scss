@@ -6,6 +6,8 @@
 $color_fondo_elementos: rgb(255, 238, 206);
 $borde_linea_negra: 1px solid black;
 $color_botones: chartreuse;
+$movil: 600px;
+$tablet: 800px;
 
 body {
   //background-color: floralwhite;
@@ -14,6 +16,9 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   @include flex_center;
   flex-direction: column;
+  @media (max-width: $movil) {
+    background-size: auto;
+  }
 }
 
 .barra_navegacion {
@@ -21,7 +26,7 @@ body {
   background-color: $color_fondo_elementos;
   border-radius: 10px;
   border: $borde_linea_negra;
-  width: 45%;
+  width: 38%;
   h3 {
     margin-right: 3%;
   }
@@ -40,6 +45,12 @@ body {
     border-radius: 10px;
     font-size: large;
     margin-left: 5%;
+  }
+  @media (max-width: $movil) {
+    width: 100%;
+  }
+  @media (min-width: $movil) and (max-width: $tablet) {
+    width: 75%;
   }
 }
 
@@ -65,6 +76,11 @@ body {
       margin-right: 1%;
     }
   }
+  @media (max-width: $movil) {
+    margin-top: 70%;
+    margin-right: 15%;
+    width: 75%;
+  }
 }
 
 #panel_contactos_atiendo {
@@ -89,23 +105,42 @@ body {
       margin-right: 1%;
     }
   }
+  @media (max-width: $movil) {
+    margin-bottom: 430%;
+    margin-right: 30%;
+    width: 100%;
+  }
+  @media (min-width: $movil) and (max-width: $tablet) {
+    width: 50%;
+    margin-bottom: 120%;
+  }
 }
 
 .seccion_introduccion {
   @include flex_center;
   margin-top: 3%;
+  @media (max-width: $movil) {
+    flex-direction: column;
+  }
 }
 
 .texto_importante {
-  width: 45%;
-  margin: 2%;
-  padding: 2%;
+  @include flex_center;
+  flex-direction: column;
+  width: 78%;
+  margin: 1%;
   button {
-    font-size: large;
+    font-size: x-large;
     border: none;
     border-radius: 15px;
-    padding: 10%;
+    padding: 5%;
     background-color: $color_botones;
+  }
+  @media (max-width: $movil) {
+    font-size: small;
+    h2 {
+      margin: 1%;
+    }
   }
 }
 
@@ -121,6 +156,37 @@ body {
     border: $borde_linea_negra;
     border-radius: 10px;
   }
+  @media (max-width: $movil) {
+    flex-direction: row;
+    img {
+      width: 30%;
+      height: 20%;
+      margin: 1%;
+    }
+  }
+}
+
+.texto_parrafos {
+  width: 50%;
+  margin: 2%;
+  padding: 2%;
+  @media (max-width: $movil) {
+    width: 100%;
+  }
+}
+
+.perfil {
+  border: $borde_linea_negra;
+  border-radius: 10px;
+}
+
+.perfil2 {
+  width: 25%;
+  border: $borde_linea_negra;
+  border-radius: 10px;
+  @media (max-width: $movil) {
+    width: 90%;
+  }
 }
 
 .que_dicen_pacientes {
@@ -134,6 +200,10 @@ body {
   grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: auto;
   gap: 5%;
+  @media (max-width: $movil) {
+    @include flex_center;
+    flex-direction: column;
+  }
 }
 
 .comentario_paciente {
@@ -155,6 +225,13 @@ body {
       margin-bottom: 50%;
     }
   }
+  @media (max-width: $movil) {
+    width: 75%;
+    margin-bottom: 10%;
+  }
+  @media (min-width: $movil) and (max-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .lugares_atencion {
@@ -166,25 +243,28 @@ body {
   margin-top: 2%;
   margin-left: 10%;
   margin-right: 10%;
+  @media (max-width: $movil) {
+    width: 90%;
+    padding: 5%;
+    iframe {
+      width: 100%;
+    }
+  }
 }
 
 .grupo_imagenes_consultorio {
   @include flex_center;
+  @media (max-width: $movil) {
+    flex-direction: column;
+  }
 }
 
 .imagenes_consultorio {
   width: 45%;
   border-radius: 10px;
   margin: 1%;
-}
-
-.perfil {
-  border: $borde_linea_negra;
-  border-radius: 10px;
-}
-
-.perfil2 {
-  width: 25%;
-  border: $borde_linea_negra;
-  border-radius: 10px;
+  @media (max-width: $movil) {
+    width: 100%;
+    margin-top: 5%;
+  }
 }

@@ -7,6 +7,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+}
 
 .barra_navegacion {
   display: flex;
@@ -15,7 +20,7 @@ body {
   background-color: rgb(255, 238, 206);
   border-radius: 10px;
   border: 1px solid black;
-  width: 45%;
+  width: 38%;
 }
 .barra_navegacion h3 {
   margin-right: 3%;
@@ -35,6 +40,16 @@ body {
   border-radius: 10px;
   font-size: large;
   margin-left: 5%;
+}
+@media (max-width: 600px) {
+  .barra_navegacion {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .barra_navegacion {
+    width: 75%;
+  }
 }
 
 #panel_contactos {
@@ -60,6 +75,13 @@ body {
   height: 8%;
   margin-right: 1%;
 }
+@media (max-width: 600px) {
+  #panel_contactos {
+    margin-top: 70%;
+    margin-right: 15%;
+    width: 75%;
+  }
+}
 
 #panel_contactos_atiendo {
   position: absolute;
@@ -84,6 +106,19 @@ body {
   height: 8%;
   margin-right: 1%;
 }
+@media (max-width: 600px) {
+  #panel_contactos_atiendo {
+    margin-bottom: 430%;
+    margin-right: 30%;
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  #panel_contactos_atiendo {
+    width: 50%;
+    margin-bottom: 120%;
+  }
+}
 
 .seccion_introduccion {
   display: flex;
@@ -91,18 +126,34 @@ body {
   align-items: center;
   margin-top: 3%;
 }
+@media (max-width: 600px) {
+  .seccion_introduccion {
+    flex-direction: column;
+  }
+}
 
 .texto_importante {
-  width: 45%;
-  margin: 2%;
-  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 78%;
+  margin: 1%;
 }
 .texto_importante button {
-  font-size: large;
+  font-size: x-large;
   border: none;
   border-radius: 15px;
-  padding: 10%;
+  padding: 5%;
   background-color: chartreuse;
+}
+@media (max-width: 600px) {
+  .texto_importante {
+    font-size: small;
+  }
+  .texto_importante h2 {
+    margin: 1%;
+  }
 }
 
 .columna_imagenes {
@@ -120,6 +171,43 @@ body {
   border: 1px solid black;
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  .columna_imagenes {
+    flex-direction: row;
+  }
+  .columna_imagenes img {
+    width: 30%;
+    height: 20%;
+    margin: 1%;
+  }
+}
+
+.texto_parrafos {
+  width: 50%;
+  margin: 2%;
+  padding: 2%;
+}
+@media (max-width: 600px) {
+  .texto_parrafos {
+    width: 100%;
+  }
+}
+
+.perfil {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.perfil2 {
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .perfil2 {
+    width: 90%;
+  }
+}
 
 .que_dicen_pacientes {
   display: flex;
@@ -134,6 +222,14 @@ body {
   grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: auto;
   gap: 5%;
+}
+@media (max-width: 600px) {
+  .resenias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .comentario_paciente {
@@ -160,6 +256,17 @@ body {
   margin: 5%;
   margin-bottom: 50%;
 }
+@media (max-width: 600px) {
+  .comentario_paciente {
+    width: 75%;
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .comentario_paciente {
+    width: 100%;
+  }
+}
 
 .lugares_atencion {
   display: flex;
@@ -173,11 +280,25 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+@media (max-width: 600px) {
+  .lugares_atencion {
+    width: 90%;
+    padding: 5%;
+  }
+  .lugares_atencion iframe {
+    width: 100%;
+  }
+}
 
 .grupo_imagenes_consultorio {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .grupo_imagenes_consultorio {
+    flex-direction: column;
+  }
 }
 
 .imagenes_consultorio {
@@ -185,16 +306,11 @@ body {
   border-radius: 10px;
   margin: 1%;
 }
-
-.perfil {
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.perfil2 {
-  width: 25%;
-  border: 1px solid black;
-  border-radius: 10px;
+@media (max-width: 600px) {
+  .imagenes_consultorio {
+    width: 100%;
+    margin-top: 5%;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
